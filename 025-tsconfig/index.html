@@ -40,7 +40,45 @@
               "sourceMap": true,
             </pre>
           </p>
-      </article>
+      </article> 
+    </section>
+
+    <section>
+        <header>
+          <h1>2. Eliminar comentarios en archivo.js</h1>
+        </header>
+
+        <p>
+          Para eliminar los comentarios del archivo.ts al trampilar a 
+          mi (TERMINAR CON APUNTES JC)
+        </p>
+      
+    </section>
+
+    <section>
+      <header>
+        <h1>3. Incluir / excluir carpetas y/o archivos</h1>
+      </header>
+      <p>
+        Para incluir y/o excluir carpetas y/o archivos debemos añadir las propiedades "include": []/ "exclude":[] después del cierre de objeto principal.
+      </p>
+
+      <pre>
+        "compilerOptions": {
+          /* Visit https://aka.ms/tsconfig to read more about this file */
+      
+          /* Projects */
+          // "incremental": true,                              /* Save .tsbuildinfo files ... */
+          // "composite": true,   
+          
+          ...
+
+          "skipLibCheck": true                                 /* Skip type checking all .d.ts files... */
+          "include": ["my_node_modules"],
+          "exclude": [
+            "my_node_modules"
+          ]
+      </pre>
     </section>
     
     
