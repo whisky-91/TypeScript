@@ -1,7 +1,6 @@
 // import { sepCorto, sepLargo } from "./separadores.js";
 (function () {
     console.log("for...of => ARREGLOS");
-    var arrPersonas = [persona1, persona2, persona3];
     console.log("for...in => OBJETOS");
     var persona1 = {
         nombre: "Andrea",
@@ -15,4 +14,5 @@
         nombre: "Celia",
         edad: 45,
     };
+    var arrPersonas = [persona1, persona2, persona3];
 })();

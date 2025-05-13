@@ -10,8 +10,6 @@
     edad: number;
   };
 
-  let arrPersonas = [persona1, persona2, persona3];
-
   console.log("for...in => OBJETOS");
 
   let persona1: Persona = {
@@ -28,4 +26,6 @@
     nombre: "Celia",
     edad: 45,
   };
+
+  let arrPersonas = [persona1, persona2, persona3];
 })();
