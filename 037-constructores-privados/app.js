@@ -1,5 +1,6 @@
-(function () {
-    var NombreCompleto = /** @class */ (function () {
+"use strict";
+(() => {
+    class NombreCompleto {
         /**
          *  El constructor privado SOLO puede
          * ser llamado desde la propia clase en
@@ -7,7 +8,7 @@
          * @param firstName : string
          * @param lastName : string
          */
-        function NombreCompleto(
+        constructor(
         /**
          * Si no declaramos como public las
          * propiedades en el constructor con:
@@ -25,20 +26,20 @@
             this.lastName = lastName;
             console.log("Nombre en constructor:", NombreCompleto.instance);
         }
-        NombreCompleto.callNombreCompleto = function (nombre, apellido) {
+        static callNombreCompleto(nombre, apellido) {
             if (!NombreCompleto.instance) {
                 NombreCompleto.instance = new NombreCompleto(nombre, apellido);
             }
             return NombreCompleto.instance;
-        };
-        NombreCompleto.changeName = function (nombre) {
+        }
+        static changeName(nombre) {
             NombreCompleto.instance.firstName = nombre;
-        };
-        return NombreCompleto;
-    }());
+        }
+    }
     // const jcvi = new NombreCompleto("Juan Carlos", "Varela Iglesias");
     // console.log({ jcvi });
-    var jc = NombreCompleto.callNombreCompleto("Juan Carlos", "Varela Iglesias");
+    let jc = NombreCompleto.callNombreCompleto(`Juan Carlos`, "Varela Iglesias");
     NombreCompleto.changeName("Paco");
-    console.log({ jc: jc });
+    console.log({ jc });
 })();
+//# sourceMappingURL=app.js.map

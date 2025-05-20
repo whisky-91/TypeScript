@@ -1,19 +1,20 @@
-(function () {
-    var StringData = /** @class */ (function () {
-        function StringData(input) {
+"use strict";
+(() => {
+    class StringData {
+        constructor(input) {
             this.output = " ";
             this.input = input;
         }
-        StringData.prototype.transformarInput = function () {
+        transformarInput() {
             console.log((this.output = this.input));
-        };
-        StringData.prototype.mostrarOutput = function (output1) {
+        }
+        mostrarOutput(output1) {
             console.log((this.output = output1));
-        };
-        return StringData;
-    }());
-    var PRUEBA = new StringData("Esta es la primera prueba");
-    console.log(PRUEBA.mostrarOutput());
-    var TEXTO1 = new StringData("Este es el primer texto");
-    TEXTO1.mostrarInput();
+        }
+    }
+    const PRUEBA = new StringData("Esta es la primera prueba");
+    console.log(PRUEBA.mostrarOutput("test"));
+    const TEXTO1 = new StringData("Este es el primer texto");
+    // TEXTO1.mostrarInput();
 })();
+//# sourceMappingURL=clasesTS-5.js.map
