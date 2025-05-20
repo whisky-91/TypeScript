@@ -47,5 +47,5 @@
 
   let jc = NombreCompleto.callNombreCompleto(`Juan Carlos`, "Varela Iglesias");
 
-  jc = NombreCompleto.changeName("Paco");
+  // jc = NombreCompleto.changeName("Paco");
 })();

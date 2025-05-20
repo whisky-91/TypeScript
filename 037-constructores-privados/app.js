@@ -39,5 +39,5 @@
     // const jcvi = new NombreCompleto("Juan Carlos", "Varela Iglesias");
     // console.log({ jcvi });
     var jc = NombreCompleto.callNombreCompleto("Juan Carlos", "Varela Iglesias");
-    jc = NombreCompleto.changeName("Paco");
+    // jc = NombreCompleto.changeName("Paco");
 })();
