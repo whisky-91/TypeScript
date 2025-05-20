@@ -1,12 +1,14 @@
 (() => {
   class NombreCompleto {
     static instance: NombreCompleto;
+    public firstName: string;
+    public lastName: string;
 
     /**
      *  El constructor privado SOLO puede
      * ser llamado desde la propia clase en
      * la que es creado, porque es PRIVADO:
-     * @param firstname : string
+     * @param firstName : string
      * @param lastName : string
      */
     private constructor(
@@ -22,9 +24,11 @@
        *    [[Prototype]]: Object
        *  [[Prototype]]: Object
        */
-      public firstname: string,
-      public lastName: string
+      firstName: string,
+      lastName: string
     ) {
+      this.firstName = firstName;
+      this.lastName = lastName;
       console.log("Nombre en constructor:", NombreCompleto.instance);
     }
     static callNombreCompleto(
@@ -38,7 +42,7 @@
     }
 
     static changeName(nombre: string): void {
-      // this.NombreCompleto.instance.firstname = nombre;
+      NombreCompleto.instance.firstName = nombre;
     }
   }
 
@@ -47,5 +51,6 @@
 
   let jc = NombreCompleto.callNombreCompleto(`Juan Carlos`, "Varela Iglesias");
 
-  // jc = NombreCompleto.changeName("Paco");
+  NombreCompleto.changeName("Paco");
+  console.log({ jc });
 })();

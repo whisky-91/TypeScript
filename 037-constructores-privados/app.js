@@ -4,7 +4,7 @@
          *  El constructor privado SOLO puede
          * ser llamado desde la propia clase en
          * la que es creado, porque es PRIVADO:
-         * @param firstname : string
+         * @param firstName : string
          * @param lastName : string
          */
         function NombreCompleto(
@@ -20,8 +20,8 @@
          *    [[Prototype]]: Object
          *  [[Prototype]]: Object
          */
-        firstname, lastName) {
-            this.firstname = firstname;
+        firstName, lastName) {
+            this.firstName = firstName;
             this.lastName = lastName;
             console.log("Nombre en constructor:", NombreCompleto.instance);
         }
@@ -32,12 +32,13 @@
             return NombreCompleto.instance;
         };
         NombreCompleto.changeName = function (nombre) {
-            // this.NombreCompleto.instance.firstname = nombre;
+            NombreCompleto.instance.firstName = nombre;
         };
         return NombreCompleto;
     }());
     // const jcvi = new NombreCompleto("Juan Carlos", "Varela Iglesias");
     // console.log({ jcvi });
     var jc = NombreCompleto.callNombreCompleto("Juan Carlos", "Varela Iglesias");
-    // jc = NombreCompleto.changeName("Paco");
+    NombreCompleto.changeName("Paco");
+    console.log({ jc: jc });
 })();
