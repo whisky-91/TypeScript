@@ -28,5 +28,8 @@
     console.log("============");
     ;
     let dosNombres;
+    function saludar() {
+        return "holaaaa";
+    }
 })();
 //# sourceMappingURL=app.js.map

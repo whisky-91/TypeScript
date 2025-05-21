@@ -43,4 +43,8 @@
   };
 
   let dosNombres: Persona
+
+  function saludar (){
+    return "holaaaa"
+  }
 })();
