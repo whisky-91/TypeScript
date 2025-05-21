@@ -8,14 +8,14 @@
     profesion: string
   };
 
-  interface Profesion {
+  interface IProfesion {
     getProfesion(): void
   };
 
   /**
    * ? Puedes implementar una o más interfaces:
    */
-  class Persona implements IPersona, Profesion {
+  class Persona implements IPersona, IProfesion {
     
     /**
      * Para eliminar el error de implementación
