@@ -1,6 +1,6 @@
 "use strict";
 (() => {
-    console.log(":");
+    console.log("Métodos en la interfaz:");
     console.log("===========");
     ;
     ;

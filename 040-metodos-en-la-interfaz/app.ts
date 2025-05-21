@@ -1,5 +1,5 @@
 (() => {
-  console.log(":");
+  console.log("Métodos en la interfaz:");
   console.log("===========");
 
   interface Persona {
