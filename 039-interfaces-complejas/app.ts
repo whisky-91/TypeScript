@@ -92,7 +92,7 @@
    * *    }
    * *  ]
    * *}
-   */
+  */
 
   interface Registro {
     codProducto:number,
