@@ -44,7 +44,7 @@ namespace calculo {
     numeros.push(n1, n2);
   };
 
-  numeros = numerosUsuario(res.a, res.b);
+  // numeros = numerosUsuario(res.a, res.b);
 }
 
 let resp = calculo.solicitarNumeros();

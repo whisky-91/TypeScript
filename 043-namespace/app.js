@@ -35,7 +35,7 @@ var calculo;
     let numerosUsuario = (n1, n2) => {
         numeros.push(n1, n2);
     };
-    numeros = numerosUsuario(res.a, res.b);
+    // numeros = numerosUsuario(res.a, res.b);
 })(calculo || (calculo = {}));
 let resp = calculo.solicitarNumeros();
 //# sourceMappingURL=app.js.map
